@@ -75,7 +75,7 @@ def preprocess_graph(adj_list):
 
 if __name__ == "__main__":
     
-    FILE_PATH = "standard.text"
+    FILE_PATH = "USA-road-d.FLA.text"
     GRAPH_NAME = "standard_Kruskal"
     NUM_RUNS = 10
     
