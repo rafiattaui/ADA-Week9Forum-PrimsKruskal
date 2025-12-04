@@ -32,18 +32,20 @@ def prims(graph, start_node=0):
     return mst, total_weight
 
 if __name__ == "__main__":
-    graph = load_graph("standard.text")
+    graph = load_graph("USA-road-d.FLA.text")
 
-    startTime = time.time()
+    for _ in range(10):
 
-    primsMst, total_weight = prims(graph, start_node='1')
+        startTime = time.time()
 
-    endTime = time.time()
+        primsMst, total_weight = prims(graph, start_node='1')
 
-    execTime = endTime - startTime
-    execTime = round(execTime, 6)
+        endTime = time.time()
 
-    save_to_csv("standard", primsMst, total_weight, execTime)
+        execTime = endTime - startTime
+        execTime = round(execTime, 6)
+
+        save_to_csv("USA-road-d.FLA", primsMst, total_weight, execTime)
     
     
     
