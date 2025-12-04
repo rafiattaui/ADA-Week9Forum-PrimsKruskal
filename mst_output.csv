@@ -1,0 +1,4 @@
+Graph Name,Total Weight,Prims Execution Time (s),Vertices,Edges
+standard,43,0.002228,6,5
+standard,43,0.002231,6,5
+standard,43,0.00158,6,5
